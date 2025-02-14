@@ -1,13 +1,13 @@
 type MathFunction = (a: number, b: number) => number;
 
 function mathOperation(a: number, b: number, operation: MathFunction): number {
-    return operation(a, b);
+  return operation(a, b);
 }
 
 // Implement add, subtract, and multiply functions
-const add // ... continue the implementation
-const subtract // ... continue the implementation
-const multiply // ... continue the implementation
+const add: MathFunction = (a, b) => a + b;
+const subtract: MathFunction = (a, b) => a - b;
+const multiply: MathFunction = (a, b) => a * b;
 
 // Test cases, do not modify
 console.log(mathOperation(5, 3, add)); // Output: 8
