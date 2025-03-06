@@ -127,11 +127,13 @@ AND LOWER(email) LIKE '%@email.com';
 
 -- Task 7
 -- Update and Delete
--- Increase the price of all books by 10% and show all columns
+-- 1. Increase the price of all books by 10% and show all columns
+UPDATE books
+SET price = price * 1.10;
 
+SELECT * FROM books;
 
-
--- Remove all borrowers who registered before 2023.
+-- 2. Remove all borrowers who registered before 2023.
 DELETE FROM borrowers
 WHERE registration_date < '2023-01-01';
 
