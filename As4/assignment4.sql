@@ -167,3 +167,5 @@ SELECT publication_year, ROUND(AVG(price), 2) AS avg_price
 FROM books
 GROUP BY publication_year
 HAVING COUNT(*) > 3;
+
+---------------------------------------------------------------------------------------------
